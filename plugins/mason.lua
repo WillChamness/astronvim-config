@@ -34,4 +34,14 @@ return {
       })
     end,
   },
+  {
+    -- Prevent debugger UI from closing immediately
+    "rcarriga/nvim-dap-ui",
+    config = function(plugin, opts)
+      require "plugins.configs.nvim-dap-ui"(plugin, opts)
+      local dap = require "dap"
+      dap.listeners.before.event_terminated["dapui_config"] = nil
+      dap.listeners.before.event_exited["dapui_config"] = nil
+    end,
+  },
 }
