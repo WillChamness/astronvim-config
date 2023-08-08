@@ -8,6 +8,7 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     shell = "/bin/zsh",
+    clipboard = "unnamedplus",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
