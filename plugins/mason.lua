@@ -9,6 +9,7 @@ return {
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
         "jedi_language_server",
+        "hls", -- requires installation thru ghcup. must also set binary in ghcup
       })
     end,
   },
@@ -20,7 +21,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         -- "prettier",
-        "stylua",
+        -- "stylua",
       })
     end,
   },
@@ -31,6 +32,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         "python",
+        "haskell", -- may take a long time to install
       })
     end,
   },
