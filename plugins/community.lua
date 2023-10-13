@@ -8,4 +8,5 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.haskell"}
+  { import = "astrocommunity.pack.typescript"}
 }
